@@ -1,3 +1,5 @@
 select  выделить
 from    откуда
 limit   ограничение
+
+select * from emploe limit 6    вернуть из таблицы emploe первые 6 записей
