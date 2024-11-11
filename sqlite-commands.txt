@@ -1,0 +1,8 @@
+sqlite3 —version    версия
+.exit               выход
+sqlite .open путь   дял открытия бд
+sqlite .\путь       для открытия бд
+.tables             вывод списка всех таблиц бд
+.schema albums      вывод схемы таблицы (пля,типы данных...)
+
+select * from albums limit 10;  вывести первые 10 записей таблицы albums
