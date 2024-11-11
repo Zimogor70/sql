@@ -1,5 +1,12 @@
-select  выделить
-from    откуда
-limit   ограничение
+select      выделить
+from        откуда
+limit       ограничение
+distinct   без повторений
 
 select * from emploe limit 6    вернуть из таблицы emploe первые 6 записей
+
+SELECT city
+FROM employees;                 выводит все города с повторениями
+
+SELECT DISTINCT city
+FROM employees;                 вывести без повторений города
