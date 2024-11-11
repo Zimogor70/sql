@@ -1,7 +1,8 @@
 select      выделить
 from        откуда
 limit       ограничение
-distinct   без повторений
+distinct    без повторений
+where       где + условие что-то
 
 select * from emploe limit 6    вернуть из таблицы emploe первые 6 записей
 
@@ -10,3 +11,7 @@ FROM employees;                 выводит все города с повто
 
 SELECT DISTINCT city
 FROM employees;                 вывести без повторений города
+
+SELECT *
+FROM employees
+WHERE city = 'London';          Выводит все записи, где city содержит London
