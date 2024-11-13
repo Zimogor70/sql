@@ -7,12 +7,16 @@ sqlite .\путь       для открытия бд
 ORDER BY поле ASC   сортировка по возрастанию
 ORDER BY поле DESC  сортировка по убыванию
 
+выводим 10 записей из таблицы tracks по возрастанию(убыванию) значения поля albumid
+SELECT name, milliseconds, albumid
+FROM tracks
+ORDER BY albumid ASC(DESC)
+LIMIT 10;
+
 select * from albums limit 10;  вывести первые 10 записей таблицы albums
 
 выводим список имен таблиц бд
 SELECT name FROM sqlite_master WHERE type='table';
-
-
 
 select count(*) from (select name from sqlite_master where type='table');
 
