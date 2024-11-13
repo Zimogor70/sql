@@ -21,3 +21,32 @@ SELECT name FROM sqlite_master WHERE type='table';
 select count(*) from (select name from sqlite_master where type='table');
 
 SELECT name FROM sqlite_master WHERE type='table' ORDER BY Name
+
+
+SELECT name, albumid,milliseconds
+FROM tracks
+ORDER BYbumid ASC , milliseconds DESC;
+
+select count(distinct city) from customers order by city;
+
+SELECT name, milliseconds, albumid
+FROM tracks
+WHERE albumid = 2;
+
+
+SELECT name, milliseconds, albumid
+FROM tracks
+WHERE albumid = 1 AND milliseconds>250000;
+
+вставить запись из двух полей в таблицу tbl1
+insert into tbl1 values('hello!',10);
+insert into tbl1 values('goodbye', 20);
+
+создаем таблицу tbl1 с двумя полями
+create table tbl1(one text, two int);
+
+создаем таблицу tbl2 с тремя полями
+CREATE TABLE tbl2 (
+    f1 varchar(30) primary key,
+    f2 text,
+    f3 real);
