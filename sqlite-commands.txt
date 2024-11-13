@@ -4,5 +4,16 @@ sqlite .open путь   дял открытия бд
 sqlite .\путь       для открытия бд
 .tables             вывод списка всех таблиц бд
 .schema albums      вывод схемы таблицы (пля,типы данных...)
+ORDER BY поле ASC   сортировка по возрастанию
+ORDER BY поле DESC  сортировка по убыванию
 
 select * from albums limit 10;  вывести первые 10 записей таблицы albums
+
+выводим список имен таблиц бд
+SELECT name FROM sqlite_master WHERE type='table';
+
+
+
+select count(*) from (select name from sqlite_master where type='table');
+
+SELECT name FROM sqlite_master WHERE type='table' ORDER BY Name
